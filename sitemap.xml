@@ -3,51 +3,61 @@
 
   <url>
     <loc>https://recieve-sms.store/</loc>
+    <lastmod>2026-02-17</lastmod>
     <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://recieve-sms.store/about.html</loc>
+    <lastmod>2026-02-17</lastmod>
     <priority>0.8</priority>
   </url>
 
-   <url>
+  <url>
     <loc>https://recieve-sms.store/recieve.html</loc>
+    <lastmod>2026-02-17</lastmod>
     <priority>0.8</priority>
   </url>
 
-   <url>
+  <url>
     <loc>https://recieve-sms.store/countries.html</loc>
+    <lastmod>2026-02-17</lastmod>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://recieve-sms.store/how-it-works.html</loc>
+    <lastmod>2026-02-17</lastmod>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://recieve-sms.store/pricing.html</loc>
+    <lastmod>2026-02-17</lastmod>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://recieve-sms.store/faq.html</loc>
+    <lastmod>2026-02-17</lastmod>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://recieve-sms.store/contact.html</loc>
+    <lastmod>2026-02-17</lastmod>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://recieve-sms.store/privacy-policy.html</loc>
+    <lastmod>2026-02-17</lastmod>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://recieve-sms.store/terms.html</loc>
+    <lastmod>2026-02-17</lastmod>
     <priority>0.6</priority>
   </url>
 
