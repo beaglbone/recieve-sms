@@ -9,6 +9,31 @@
   <meta name="description" content="Receive WhatsApp OTP SMS online without using your real phone number. Use free temporary numbers for WhatsApp verification instantly.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://recieve-sms.store/receive-otp-whatsapp.html">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Receive WhatsApp OTP Online Without Phone Number",
+    "description": "Receive WhatsApp OTP SMS online using free temporary phone numbers without using your real SIM.",
+    "author": {
+      "@type": "Organization",
+      "name": "ReceiveSMS"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "ReceiveSMS",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://recieve-sms.store/logo.png"
+      }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://recieve-sms.store/receive-otp-whatsapp.html"
+      }
+    }
+    </script>
+
 
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -16,26 +41,82 @@
   <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-    }
-  </style>
+     <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GQJ2MHG6J0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-GQJ2MHG6J0');
+    </script>
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e1b4b 0%, #4f46e5 100%);
+        }
+
+        .nav-sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 50;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav id="navbar" class="bg-white border-b border-gray-200 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center space-x-2">
+                        <div class="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center">
+                            <i data-lucide="message-square" class="w-5 h-5 text-white"></i>
+                        </div>
+                        <span class="text-xl font-bold text-gray-900">RecieveSMS</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-indigo-600 font-medium">Home</a>
+                    <a href="receive.html" class="text-gray-700 hover:text-indigo-600 font-medium transition">Receive SMS</a>
+                    <a href="countries.html" class="text-gray-700 hover:text-indigo-600 font-medium transition">Countries</a>
+                    <a href="how-it-works.html" class="text-gray-700 hover:text-indigo-600 font-medium transition">How It Works</a>
+                    <a href="pricing.html" class="text-gray-700 hover:text-indigo-600 font-medium transition">Pricing</a>
+                    <a href="faq.html" class="text-gray-700 hover:text-indigo-600 font-medium transition">FAQ</a>
+                    <a href="contact.html" class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition">Contact</a>
+                </div>
 
-  <!-- Header -->
-  <header class="bg-white border-b">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-      <a href="/" class="text-xl font-bold text-indigo-600">
-        ReceiveSMS
-      </a>
-      <a href="/receive.html" class="text-sm font-medium text-gray-600 hover:text-indigo-600">
-        Receive SMS
-      </a>
-    </div>
-  </header>
+                <!-- Mobile menu button -->
+                <div class="flex items-center md:hidden">
+                    <button onclick="toggleMobileMenu()" class="text-gray-700 hover:text-gray-900 p-2">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <div class="px-4 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-indigo-600 font-medium bg-indigo-50 rounded-md">Home</a>
+                <a href="receive.html" class="block px-3 py-2 text-gray-700 hover:text-indigo-600 font-medium">Receive SMS</a>
+                <a href="countries.html" class="block px-3 py-2 text-gray-700 hover:text-indigo-600 font-medium">Countries</a>
+                <a href="how-it-works.html" class="block px-3 py-2 text-gray-700 hover:text-indigo-600 font-medium">How It Works</a>
+                <a href="pricing.html" class="block px-3 py-2 text-gray-700 hover:text-indigo-600 font-medium">Pricing</a>
+                <a href="faq.html" class="block px-3 py-2 text-gray-700 hover:text-indigo-600 font-medium">FAQ</a>
+                <a href="contact.html" class="block px-3 py-2 text-gray-700 hover:text-indigo-600 font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
 
   <!-- Hero -->
   <section class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white">
@@ -128,12 +209,76 @@
 
   </main>
 
-  <!-- Footer -->
-  <footer class="bg-white border-t mt-12">
-    <div class="max-w-7xl mx-auto px-4 py-6 text-center text-sm text-gray-500">
-      © 2026 ReceiveSMS. All rights reserved.
-    </div>
-  </footer>
+  <!-- FOOTER (Simple Version Matching Theme) -->
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center">
+                            <i data-lucide="message-square" class="w-5 h-5 text-white"></i>
+                        </div>
+                        <span class="text-xl font-bold text-white">RecieveSMS</span>
+                    </div>
+                    <p class="text-sm text-gray-400">Free temporary phone numbers for SMS verification. Protect your privacy online.</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Service</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="receive.html" class="hover:text-white transition">Receive SMS</a></li>
+                        <li><a href="countries.html" class="hover:text-white transition">Countries</a></li>
+                        <li><a href="pricing.html" class="hover:text-white transition">Pricing</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="how-it-works.html" class="hover:text-white transition">How It Works</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="privacy.html" class="hover:text-white transition">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="hover:text-white transition">Terms & Conditions</a></li>
+                        <li><a href="faq.html" class="hover:text-white transition">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 flex flex-col sm:flex-row justify-between items-center">
+                <p class="text-sm text-gray-500">&copy; 2024 RecieveSMS. All rights reserved.</p>
+                <div class="flex items-center space-x-4 mt-4 sm:mt-0">
+                    <!-- <span class="text-xs text-gray-500">⚠️ For demo purposes only</span> -->
+                </div>
+            </div>
+        </div>
+    </footer>
 
+    <script>
+        lucide.createIcons();
+        
+        // Sticky navbar
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 10) {
+                navbar.classList.add('nav-sticky');
+            } else {
+                navbar.classList.remove('nav-sticky');
+            }
+        });
+        
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
 </body>
 </html>
