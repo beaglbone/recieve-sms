@@ -388,10 +388,7 @@
             }
         });
 
-        function getCountryFromURL() {       //test code 1
-            const params = new URLSearchParams(window.location.search);
-            return params.get("country"); // example: "usa"
-        }
+        
 
 
         // Mobile menu toggle
@@ -473,20 +470,6 @@
             });
         
             window.countryData = data;
-
-            const urlCountry = getCountryFromURL();   // test code 2
-
-            if (urlCountry && countryData[urlCountry]) {
-                selectedCountry = urlCountry;
-                loadNumbers(urlCountry);
-            
-                // optional: update dropdown text
-                const countryBtn = document.getElementById("countryDropdownBtn");
-                if (countryBtn) {
-                    countryBtn.innerText = urlCountry.toUpperCase();
-                }
-            }                                                                // test code 2
- 
         
             // 🔄 auto-refresh UI + stats
             const selectedCountry = document.getElementById("countrySelect").value;
