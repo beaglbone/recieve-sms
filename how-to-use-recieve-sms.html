@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Secure Access - Step 1</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+<!-- Top Countdown Banner -->
+<div id="topMessage" class="fixed top-0 left-0 w-full bg-blue-600 text-white text-center py-3 font-semibold z-50">
+  Please wait <span id="countdown">10</span> seconds while we prepare your content...
+</div>
+
+<div class="pt-20 pb-16 px-6 max-w-4xl mx-auto">
+
+<h1 class="text-3xl font-bold mb-6 text-gray-800">
+Secure SMS Verification Guide
+</h1>
+
+<p class="text-gray-700 mb-4">
+Online verification has become a standard requirement for most websites today. Whether you are registering for a social media platform, creating an email account, or testing a new online service, SMS verification helps confirm identity and reduce spam.
+</p>
+
+<p class="text-gray-700 mb-4">
+Temporary phone numbers provide a simple and convenient way to receive verification codes without exposing your personal number. Many users prefer this method to protect their privacy and avoid unwanted promotional messages.
+</p>
+
+<p class="text-gray-700 mb-4">
+Using virtual SMS numbers is especially useful for developers, testers, marketers, and privacy-conscious users. Instead of purchasing multiple SIM cards, you can access public virtual numbers directly through your browser.
+</p>
+
+<h2 class="text-2xl font-semibold mt-8 mb-4 text-gray-800">
+Benefits of Using Temporary Numbers
+</h2>
+
+<ul class="list-disc list-inside text-gray-700 space-y-2">
+<li>Enhanced privacy protection</li>
+<li>Reduced spam and marketing calls</li>
+<li>Instant access without SIM activation</li>
+<li>Quick account verification</li>
+<li>Useful for testing apps and services</li>
+</ul>
+
+<p class="text-gray-700 mt-6 mb-4">
+It is important to remember that public numbers are shared. Avoid using them for banking, financial accounts, or highly confidential registrations.
+</p>
+
+<p class="text-gray-700 mb-4">
+For the best experience, always verify that the service you are registering with supports virtual numbers. Some platforms may block shared numbers for security reasons.
+</p>
+
+<p class="text-gray-700 mb-4">
+Our platform updates numbers regularly to ensure consistent delivery and reliability. Messages typically appear within seconds, though delivery times may vary depending on the sending service.
+</p>
+
+<!-- Hidden Continue Button -->
+<div id="continueSection" class="hidden mt-10 text-center">
+  <a href="step2.html" 
+     class="px-8 py-4 bg-green-600 text-white rounded-lg shadow hover:bg-green-700 transition text-lg">
+     Continue to Next Step
+  </a>
+</div>
+
+</div>
+
+<script>
+let timeLeft = 10;
+let countdownElement = document.getElementById("countdown");
+let continueSection = document.getElementById("continueSection");
+
+let timer = setInterval(function() {
+    timeLeft--;
+    countdownElement.textContent = timeLeft;
+
+    if(timeLeft <= 0){
+        clearInterval(timer);
+        document.getElementById("topMessage").innerHTML = 
+        "Scroll down and click the Continue button to proceed.";
+        continueSection.classList.remove("hidden");
+    }
+}, 1000);
+</script>
+
+</body>
+</html>
