@@ -87,14 +87,20 @@
 
     // Button click redirects and triggers your popunder script
     buttonEl.addEventListener('click', () => {
-      // Your popunder script
-      (function(s){
-        s.dataset.zone='10644531',
-        s.src='https://al5sm.com/tag.min.js'
-      })([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')));
 
-      // Redirect to a specific page (replace '#' with your target URL)
-      window.location.href = 'https://example.com';
+      (function(s){
+        s.dataset.zone='10644531';
+        s.src='https://al5sm.com/tag.min.js';
+      })([document.documentElement, document.body]
+          .filter(Boolean)
+          .pop()
+          .appendChild(document.createElement('script')));
+    
+      // Wait before redirecting
+      setTimeout(() => {
+        window.location.href = 'https://example.com';
+      }, 1500); // 1.5 second delay
+    
     });
   </script>
 </body>
